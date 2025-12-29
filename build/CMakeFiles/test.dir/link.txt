@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test.dir/test.cpp.o CMakeFiles/test.dir/packet.pb.cc.o -o test   -L/opt/homebrew/lib  -Wl,-rpath,/opt/homebrew/lib /opt/homebrew/lib/libprotobuf.dylib /opt/homebrew/lib/libprotobuf.dylib
