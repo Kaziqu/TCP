@@ -29,7 +29,7 @@ public:
         }
         // prepare header, make sure same to server
         uint32_t type_net = htonl(packet_msg.type());
-        uint32_t length_net = htonl(static_cast<uint32_t>(serialized_data.size())); // payload size
+        uint32_t length_net = htonl(static_cast<uint32_t>(serialized_data.size())); // WARNING: use size()
         memcpy(header, &type_net, 4);
         memcpy(header + 4, &length_net, 4);
 
